@@ -2,7 +2,7 @@
     "name": "rafal/javascriptroutingserviceprovider",
     "type": "library",
     "description": "JavascriptRouting Service Provider provides easy way to access your routes inside Javacript files. It's cool because putting your routes inside js files as static strings sucks.",
-    "homepage": "https://github.com/RafalFilipek/ProfilerServiceProvider",
+    "homepage": "https://github.com/Efk3/JavascriptRoutingServiceProvider",
     "license": "MIT",
     "authors": [
         {

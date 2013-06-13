@@ -9,9 +9,10 @@ Installation (composer)
 Options
 -------
 * ```jsrouting.path``` - Required. Path where ```router.js``` ( name by default ) will be created.
-* ```jsrouting.file_neme``` - Output file name. Default ```router.js```.
+* ```jsrouting.file_name``` - Output file name. Default ```router.js```.
 * ```jsrouting.refresh``` - If true routes will be generated on each request. Default ```true```. 
 * ```jsrouting.basepath``` - If true request basepath will be inserted before each generated route. Default ```false```. 
+* ```jsrouting.skip``` - Add one (single string) or multiple (array) regular expression to skip routings.
 
 Example
 -------
@@ -22,6 +23,7 @@ Lets say you have:
         'jsrouting.file_name'   => 'router.js',
         'jsrouting.refresh'     => $app['debug'],
         'jsrouting.basepath'    => true,
+        `jsrouting.skip'		=> array("/^\/_profiler/"),
     ));
 
     $app->get('/{name}/extensions/are/{what}', function() use($app) {
